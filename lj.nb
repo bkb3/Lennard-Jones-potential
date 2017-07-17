@@ -1,0 +1,7 @@
+\[Sigma][1] = 4.486;
+v[r_] := 800 ((\[Sigma][1]/r)^12 - (\[Sigma][1]/
+      r)^6); (* You can absorb the factor 800 in the constants \
+\[Sigma][1] or in r itself *)
+lj[r_] := Plot[v[r], {r, 2, 12}, PlotRange -> {-250, 100}, 
+  GridLines -> Automatic]
+Show[lj[r]]
